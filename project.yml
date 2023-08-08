@@ -9,6 +9,9 @@ settings:
   rss_page: trident-rn.html
   versions:
   - name: 아스트라 트리덴트
+    url: "/trident-2304"
+    version-number: '23.04'
+  - name: 아스트라 트리덴트
     url: "/trident"
     version-number: '23.07'
   - name: 아스트라 트리덴트
