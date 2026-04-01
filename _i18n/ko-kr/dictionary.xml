@@ -2468,8 +2468,6 @@ ONTAP-NAS-flexgroup, ONTAP-SAN, GCP-CV</block>
   <block id="d3889fc650fa47326b5f1d0c56f50970" category="inline-link-macro">POD 보안 표준</block>
   <block id="4e8effbd512bb14dbe10454c0f045ff2" category="paragraph">새로운 소식 <block ref="305368b4f0d008a807e095ab9da58448" category="inline-link-macro-rx"></block> (PSS) 섹션에 설치 시 Astra Trident에서 활성화한 상세 권한이 추가되었습니다.</block>
   <block id="278dc4a29aa2b881b9dc4b45a82929c5" category="section-title">22.04의 변경</block>
-  <block id="ba09ee47d11962c1ccd13d7e1f10e6c5" category="inline-link">이전 버전의 문서</block>
-  <block id="368b120a3b5f53a49dc3ab96ec9b8dbd" category="paragraph">NetApp은 제품과 서비스를 지속적으로 개선 및 개선하고 있습니다. Astra Trident의 최신 기능 몇 가지를 소개합니다. 이전 릴리스는 를 참조하십시오<block ref="25da125dffad1d6323c21354bccf0203" category="inline-link-rx"></block>.</block>
   <block id="7072ec708b0ea7e3243747d8b79c0d20" category="admonition">이전 Trident 릴리즈에서 업그레이드하고 Azure NetApp Files를 사용하는 경우, 를 참조하십시오 <block ref="d5189de027922f81005951e6efe0efd5" prefix="" category="inline-code"></block> 구성 매개 변수는 이제 필수 싱글톤 필드입니다.</block>
   <block id="cb60f101c87f3def78d0fef168389244" category="inline-link-macro">GitHub 문제 #681</block>
   <block id="2901fba3b85d37ea6000d90e72366ba6" category="list-text">iSCSI 이니시에이터 이름의 구문 분석 기능이 향상되었습니다. (<block ref="3947f141b94c1867221790f45a6ee173" category="inline-link-macro-rx"></block>)</block>
@@ -3018,20 +3016,6 @@ Kubernetes Non-Graceful Node Shutdown(ngns)과 함께 작동하여 클러스터 
   <block id="642bfa81920103d4177bb3fdf6f9186f" category="list-text"><block ref="642bfa81920103d4177bb3fdf6f9186f" category="inline-link-macro-rx"></block></block>
   <block id="93e8ba41e1ebcadc1338cc7f75109210" category="inline-link-macro">추가 스토리지 클래스를 생성합니다.</block>
   <block id="daa40449d28fbb16d2bcd8a8434d05e6" category="list-text"><block ref="daa40449d28fbb16d2bcd8a8434d05e6" category="inline-link-macro-rx"></block></block>
-  <block id="34c4dac14496e9c45d92f345d9392fc8" category="summary">최신 버전을 실행하지 않는 경우 Astra Trident의 이전 릴리스에 대한 문서를 사용할 수 있습니다.</block>
-  <block id="93168a8084b3e838d2932c4734bd234e" category="section-title">이전 버전</block>
-  <block id="78038c97749fe61b1148a68a71c14a02" category="inline-link-macro">Astra Trident 릴리즈 및 지원 주기</block>
-  <block id="3a1fdf1059d780b17a5dd3ecba99371d" category="paragraph">Astra Trident 23.04를 실행하지 않는 경우 에 따라 이전 릴리즈의 문서를 사용할 수 있습니다 <block ref="ec2082dc40596525d1bb212183949428" category="inline-link-macro-rx"></block>.</block>
-  <block id="4693b2393d80830cd4f198db20bf2b72" category="inline-link">Astra Trident 23.01</block>
-  <block id="cd494508ccf1cdc45163d6d9d0f401ff" category="list-text"><block ref="cd494508ccf1cdc45163d6d9d0f401ff" category="inline-link-rx"></block></block>
-  <block id="3fe5d266a33f137293c314a2e334b611" category="inline-link">Astra Trident 22.10</block>
-  <block id="9fefe9ff51badc61edd8a36c8240aa29" category="list-text"><block ref="9fefe9ff51badc61edd8a36c8240aa29" category="inline-link-rx"></block></block>
-  <block id="21d437ff7c8ceb5481603b5d2c05442a" category="inline-link">Astra Trident 22.07</block>
-  <block id="8a7908446b584a99ce1055c602a9c74e" category="list-text"><block ref="8a7908446b584a99ce1055c602a9c74e" category="inline-link-rx"></block></block>
-  <block id="c53358822905bb04d312060d1cb568af" category="inline-link">Astra Trident 22.04</block>
-  <block id="fdd380631ba8063e7b8f842282a01e40" category="list-text"><block ref="fdd380631ba8063e7b8f842282a01e40" category="inline-link-rx"></block></block>
-  <block id="4af8991c21dff2f779496b8350d1124b" category="inline-link">Astra Trident 22.01</block>
-  <block id="7669b0b69333e81c7c208aea3d1a3c6f" category="list-text"><block ref="7669b0b69333e81c7c208aea3d1a3c6f" category="inline-link-rx"></block></block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">법적 고지</block>
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="paragraph">법적 고지 사항은 저작권 선언, 상표, 특허 등에 대한 액세스를 제공합니다.</block>
   <block id="6016a2b341113bf496b719905398ecd2" category="section-title">저작권</block>
@@ -3967,4 +3951,5 @@ Yesfootnote: 1[]: Astra Trident에서 관리하지 않음</block>
   <block id="cd8b45d6d96bb528f04c3ce2788b337d" category="paragraph">다음 예제는 PVC 주석을 사용하여 RWO 액세스 모드가 설정된 백엔드<block ref="ac181edf7a7be1f8ae6a6b0ac4a71686" prefix=" " category="inline-code"></block>에서 <block ref="47068649001b68b4aba2f4219a2f981b" prefix=" " category="inline-code"></block>라는 이름의 1GiB<block ref="8321592ce24c8a122ecf26a63cfca407" prefix=" " category="inline-code"></block> 볼륨을 가져옵니다.</block>
   <block id="6aa655b386a1e31c420fd6553ed2b4fc" category="paragraph">다음 예제는 PVC 주석을 사용하여 RWO 액세스 모드가 설정된 백엔드<block ref="4bafc897a4f30b09156a60d3350c8819" prefix=" " category="inline-code"></block>에서 이름이<block ref="a8aa3f9da25a5d21fdd26c0a26592e1e" prefix=" " category="inline-code"></block>인 1Gi<block ref="8321592ce24c8a122ecf26a63cfca407" prefix=" " category="inline-code"></block> 볼륨을 가져옵니다.</block>
   <block id="3a175f8153aad5b64492df6eadb5a5af" category="paragraph">다음 예는 관리형 볼륨과 비관리형 볼륨을 가져오는 방법을 보여줍니다.</block>
+  <block id="15bd21e4cb669eaf47cfec94c1119ed7" category="paragraph">NetApp은 제품과 서비스를 지속적으로 개선하고 향상시키고 있습니다. 다음은 Astra Trident의 최신 기능 중 일부입니다. 이전 릴리스에 대한 정보는 이전 버전의 설명서를 참조하십시오.</block>
 </blocks>
