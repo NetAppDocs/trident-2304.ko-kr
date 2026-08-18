@@ -16,6 +16,7 @@ Astra Trident는 분기별 릴리스 케이던스를 따르며, 매년 4개의 �
 
 
 
+[[considerations-before-upgrading]]
 == 업그레이드 전 고려 사항
 
 Astra Trident의 최신 릴리즈로 업그레이드할 때 다음 사항을 고려하십시오.
@@ -39,6 +40,7 @@ Astra Trident의 최신 릴리즈로 업그레이드할 때 다음 사항을 고
 
 
 
+[[step-1-select-a-version]]
 == 1단계: 버전을 선택합니다
 
 Astra Trident 버전은 날짜를 기반으로 합니다 `YY.MM` 이름 지정 규칙. 여기서 "YY"는 연도의 마지막 두 자리이고 "MM"은 월입니다. DOT 릴리스는 a를 따릅니다 `YY.MM.X` 규칙. 여기서 "X"는 패치 수준입니다. 업그레이드할 버전에 따라 업그레이드할 버전을 선택합니다.
@@ -57,6 +59,7 @@ NOTE: OpenShift Container Platform에서 Trident 연산자를 사용하여 업�
 
 
 
+[[step-2-determine-the-original-installation-method]]
 == 2단계: 원래 설치 방법을 결정합니다
 
 일반적으로 초기 설치에 사용한 것과 동일한 방법으로 업그레이드해야 하지만 link:../trident-get-started/kubernetes-deploy.html#moving-between-installation-methods["설치 방법 간에 이동합니다"].
@@ -79,12 +82,14 @@ NOTE: OpenShift Container Platform에서 Trident 연산자를 사용하여 업�
 
 
 
+[[step-3-select-an-upgrade-method]]
 == 3단계: 업그레이드 방법을 선택합니다
 
 Astra Trident를 업그레이드하는 방법에는 두 가지가 있습니다.
 
 
 
+[[when-to-upgrade-using-the-operator]]
 === 운용자를 통한 업그레이드 시기
 
 가능합니다 link:upgrade-operator.html["Trident 연산자를 사용하여 업그레이드합니다"] 조건:
@@ -110,14 +115,16 @@ WARNING: 를 사용하는 경우 연산자를 사용하여 Trident를 업그레�
 
 
 
+[[when-to-upgrade-using-tridentctl]]
 === 를 사용하여 업그레이드해야 하는 경우 `tridentctl`
 
 가능합니다  처음에 'tridenctl'을 사용하여 Astra Trident를 설치한 경우
 
-`tridentctl` Astra Trident를 설치하는 일반적인 방법이며 복잡한 사용자 정의가 필요한 사용자에게 가장 많은 옵션을 제공합니다. 자세한 내용은 을 참조하십시오 link:..trident-get-started/kubernetes-deploy.html#choose-your-installation-method["설치 방법을 선택합니다"].
+`tridentctl`은 Astra Trident를 설치하는 기존 방법이며 복잡한 맞춤 설정이 필요한 사용자에게 가장 많은 옵션을 제공합니다. 자세한 내용은 link:../trident-get-started/kubernetes-deploy.html#choose-your-installation-method["설치 방법을 선택합니다"]을 참조하십시오.
 
 
 
+[[changes-to-the-operator]]
 == 조작자에 대한 변경
 
 Astra Trident의 21.01 릴리즈에는 운영자에게 구조적 변경 사항이 도입되었습니다.

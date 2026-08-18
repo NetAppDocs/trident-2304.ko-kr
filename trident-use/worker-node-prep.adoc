@@ -16,6 +16,7 @@ Kubernetes 클러스터의 모든 작업자 노드는 Pod용으로 프로비저�
 
 
 
+[[selecting-the-right-tools]]
 == 올바른 도구 선택
 
 드라이버를 함께 사용하는 경우 NFS 및 iSCSI 도구를 설치해야 합니다.
@@ -31,6 +32,7 @@ NOTE: 최신 버전의 RedHat CoreOS에는 기본적으로 NFS 및 iSCSI가 설�
 
 
 
+[[node-service-discovery]]
 == 노드 서비스 검색
 
 Astra Trident는 노드가 iSCSI 또는 NFS 서비스를 실행할 수 있는지 자동으로 감지하려고 시도합니다.
@@ -54,6 +56,7 @@ tridentctl get node -o wide -n <Trident namespace>
 ----
 
 
+[[nfs-volumes]]
 == NFS 볼륨
 
 운영 체제의 명령을 사용하여 NFS 툴을 설치합니다. 부팅 중에 NFS 서비스가 시작되었는지 확인합니다.
@@ -80,12 +83,14 @@ WARNING: 볼륨에 연결할 때 오류가 발생하지 않도록 NFS 툴을 설
 
 
 
+[[iscsi-volumes]]
 == iSCSI 볼륨
 
 Astra Trident는 iSCSI 세션을 자동으로 설정하고, LUN을 검색하고, 다중 경로 장치를 검색하고, 포맷하고, 포드에 마운트할 수 있습니다.
 
 
 
+[[iscsi-self-healing-capabilities]]
 === iSCSI 자동 복구 기능
 
 ONTAP 시스템의 경우, Astra Trident가 5분마다 iSCSI 자동 복구를 실행하여 다음을 수행합니다.
@@ -111,6 +116,7 @@ NOTE: 예를 들어, 스토리지 컨트롤러에서 CHAP 암호를 회전시키
 
 
 
+[[install-the-iscsi-tools]]
 === iSCSI 도구를 설치합니다
 
 운영 체제의 명령을 사용하여 iSCSI 도구를 설치합니다.

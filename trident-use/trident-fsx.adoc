@@ -16,6 +16,7 @@ https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/what-is-fsx-ontap.html["NetApp
 
 
 
+[[overview]]
 == 개요
 
 파일 시스템은 Amazon FSx의 주요 리소스이며, 이는 사내 ONTAP 클러스터와 유사합니다. 각 SVM 내에서 파일 시스템에 파일과 폴더를 저장하는 데이터 컨테이너인 하나 이상의 볼륨을 생성할 수 있습니다. NetApp ONTAP용 Amazon FSx를 사용하면 클라우드에서 Data ONTAP가 관리형 파일 시스템으로 제공됩니다. 새로운 파일 시스템 유형을 * NetApp ONTAP * 라고 합니다.
@@ -26,6 +27,7 @@ NetApp ONTAP용 Amazon FSx에서 사용됩니다 https://docs.netapp.com/ontap-9
 
 
 
+[[considerations]]
 == 고려 사항
 
 * SMB 볼륨:
@@ -47,6 +49,7 @@ image:screenshot-fsx-backup-disable.png["자동 백업을 사용하지 않도록
 
 
 
+[[drivers]]
 == 드라이버
 
 다음 드라이버를 사용하여 Astra Trident를 NetApp ONTAP용 Amazon FSx와 통합할 수 있습니다.
@@ -62,6 +65,7 @@ image:screenshot-fsx-backup-disable.png["자동 백업을 사용하지 않도록
 
 
 
+[[authentication]]
 == 인증
 
 Astra Trident는 두 가지 인증 모드를 제공합니다.
@@ -84,6 +88,7 @@ WARNING: Astra Trident는 한 대로 실행될 것으로 예상합니다 `vsadmi
 
 
 
+[[find-more-information]]
 == 자세한 내용을 확인하십시오
 
 * https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/what-is-fsx-ontap.html["NetApp ONTAP용 Amazon FSx 문서"^]

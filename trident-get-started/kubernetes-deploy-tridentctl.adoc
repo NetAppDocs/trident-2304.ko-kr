@@ -16,6 +16,7 @@ summary: '을 사용하여 Astra Trident를 설치할 수 있습니다 `tridentc
 
 
 
+[[critical-information-about-astra-trident-23-04]]
 == Astra Trident 23.04에 대한 중요 정보
 
 * Astra Trident * 에 대한 다음 중요 정보를 읽어야 합니다
@@ -33,6 +34,7 @@ summary: '을 사용하여 Astra Trident를 설치할 수 있습니다 `tridentc
 ====
 
 
+[[install-astra-trident-using-tridentctl]]
 == 를 사용하여 Astra Trident를 설치합니다 `tridentctl`
 
 검토 link:../trident-get-started/kubernetes-deploy.html["설치 개요"] 설치 사전 요구 사항을 충족하고 환경에 맞는 올바른 설치 옵션을 선택했는지 확인합니다.
@@ -69,6 +71,7 @@ kubectl run -i --tty ping --image=busybox --restart=Never --rm -- \
 ====
 
 
+[[step-1-download-the-trident-installer-package]]
 == 1단계: Trident 설치 프로그램 패키지를 다운로드합니다
 
 Astra Trident 설치 프로그램 패키지는 Trident Pod를 생성하고 상태를 유지하는 데 사용되는 CRD 객체를 구성하며, CSI 사이드카를 초기화하여 클러스터 호스트에 볼륨 프로비저닝 및 연결과 같은 작업을 수행합니다. 에서 최신 버전의 Trident 설치 프로그램을 다운로드하고 압축을 풉니다 link:https://github.com/NetApp/trident/releases/latest["GitHub의 _Assets_섹션"^]. 선택한 Astra Trident 버전을 사용하여 예제에서 update_<trident-installer-XX.XX.X.tar.gz>_를 선택합니다.
@@ -81,6 +84,7 @@ cd trident-installer
 ----
 
 
+[[step-2-install-astra-trident]]
 == 2단계: Astra Trident 설치
 
 를 실행하여 원하는 네임스페이스에 Astra Trident를 설치합니다 `tridentctl install` 명령. 추가 인수를 추가하여 이미지 레지스트리 위치를 지정할 수 있습니다.
@@ -134,12 +138,14 @@ INFO Trident installation succeeded.
 ----
 
 
+[[verify-the-installation]]
 == 설치를 확인합니다
 
 POD 생성 상태 또는 를 사용하여 설치를 확인할 수 있습니다 `tridentctl`.
 
 
 
+[[using-pod-creation-status]]
 === POD 생성 상태 사용
 
 생성된 Pod의 상태를 검토하여 Astra Trident 설치가 완료되었는지 확인할 수 있습니다.
@@ -157,6 +163,7 @@ NOTE: 설치 프로그램이 성공적으로 완료되지 않거나 `trident-con
 
 
 
+[[using-tridentctl]]
 === 사용 `tridentctl`
 
 을 사용할 수 있습니다 `tridentctl` 설치된 Astra Trident의 버전을 확인합니다.
@@ -173,6 +180,7 @@ NOTE: 설치 프로그램이 성공적으로 완료되지 않거나 `trident-con
 ----
 
 
+[[sample-configurations]]
 == 샘플 구성
 
 .예 1: Windows 노드에서 Astra Trident를 실행하도록 설정합니다
@@ -188,7 +196,7 @@ tridentctl install --windows -n trident
 .예 2: 강제 분리 사용
 [%collapsible%open]
 ====
-강제 분리에 대한 자세한 내용은 을 참조하십시오 link:..trident-get-started/kubernetes-customize-deploy.html["Trident 운영자 설치를 사용자 지정합니다"].
+강제 분리에 대한 자세한 내용은 link:kubernetes-customize-deploy.html["Trident 운영자 설치를 사용자 지정합니다"]을 참조하십시오.
 
 [listing]
 ----
@@ -197,6 +205,7 @@ tridentctl install --enable-force-detach=true -n trident
 ====
 
 
+[[whats-next]]
 == 다음 단계
 
 이제 가능합니다 link:kubernetes-postdeployment.html["백엔드 및 스토리지 클래스를 생성하고, 볼륨을 프로비저닝하고, POD에 볼륨을 마운트합니다"].

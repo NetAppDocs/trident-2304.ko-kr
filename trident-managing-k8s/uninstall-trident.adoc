@@ -16,6 +16,7 @@ Astra Trident의 설치 방식에 따라 여러 옵션을 사용하여 제거할
 
 
 
+[[uninstall-by-using-helm]]
 == Helm을 사용하여 제거합니다
 
 Helm을 사용하여 Astra Trident를 설치한 경우 를 사용하여 제거할 수 있습니다 `helm uninstall`.
@@ -33,6 +34,7 @@ release "trident" uninstalled
 ----
 
 
+[[uninstall-by-using-the-trident-operator]]
 == Trident 연산자를 사용하여 제거합니다
 
 운영자를 사용하여 Astra Trident를 설치한 경우 다음 중 하나를 수행하여 제거할 수 있습니다.
@@ -62,6 +64,7 @@ WARNING: 전체 제거를 수행할 때에만 CRD를 지우는 것을 고려해�
 
 
 
+[[uninstall-by-using-tridentctl]]
 == 을 사용하여 를 제거합니다 `tridentctl`
 
 를 실행합니다 `uninstall` 명령을 입력합니다 `tridentctl` 다음과 같이 CRD 및 관련 객체를 제외한 Astra Trident와 관련된 모든 리소스를 제거하므로 설치 프로그램을 다시 쉽게 실행하여 최신 버전으로 업데이트할 수 있습니다.

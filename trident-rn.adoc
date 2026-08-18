@@ -19,6 +19,7 @@ WARNING: 를 클릭합니다 `tridentctl` 설치 프로그램 zip 파일에 제�
 
 
 
+[[whats-new-in-23-04]]
 == 23.04의 새로운 기능
 
 
@@ -26,6 +27,7 @@ IMPORTANT: ONTAP-SAN * 볼륨의 강제 볼륨 분리 기능은 비우아한 노
 
 
 
+[[fixes]]
 === 수정
 
 * SPEC에 지정된 경우 설치에 IPv6 localhost를 사용하도록 고정 Trident Operator가 수정되었습니다.
@@ -42,6 +44,7 @@ IMPORTANT: ONTAP-SAN * 볼륨의 강제 볼륨 분리 기능은 비우아한 노
 
 
 
+[[enhancements]]
 === 향상된 기능
 
 * 쿠버네티스:
@@ -63,16 +66,19 @@ IMPORTANT: ONTAP-SAN * 볼륨의 강제 볼륨 분리 기능은 비우아한 노
 
 
 
+[[deprecations]]
 === 사용 중단
 
 ** Kubernetes:** ONTAP-SAN 및 ONTAP-SAN-이코노미 드라이버를 구성할 때 백엔드 범위의 igroup이 더 이상 생성되지 않습니다(link:https://github.com/NetApp/trident/issues/758["문제 #758"])를 클릭합니다.
 
 
 
+[[changes-in-23-01-1]]
 == 23.01.1의 변경 사항
 
 
 
+[[fixes]]
 === 수정
 
 * SPEC에 지정된 경우 설치에 IPv6 localhost를 사용하도록 고정 Trident Operator가 수정되었습니다.
@@ -84,6 +90,7 @@ IMPORTANT: ONTAP-SAN * 볼륨의 강제 볼륨 분리 기능은 비우아한 노
 
 
 
+[[changes-in-23-01]]
 == 23.01의 변경 사항
 
 
@@ -91,6 +98,7 @@ IMPORTANT: 이제 Trident에서 Kubernetes 1.27이 지원됩니다. Kubernetes�
 
 
 
+[[fixes]]
 === 수정
 
 * Kubernetes: Helm(link:https://github.com/NetApp/trident/issues/794["문제 #783, #794"^])를 클릭합니다.
@@ -98,6 +106,7 @@ IMPORTANT: 이제 Trident에서 Kubernetes 1.27이 지원됩니다. Kubernetes�
 
 
 
+[[enhancements]]
 === 향상된 기능
 
 .쿠버네티스
@@ -120,6 +129,7 @@ IMPORTANT: 이제 Trident에서 Kubernetes 1.27이 지원됩니다. Kubernetes�
 
 
 
+[[deprecations]]
 === 사용 중단
 
 * Kubernetes: 지원되는 최소 Kubernetes를 1.21로 업데이트했습니다.
@@ -128,6 +138,7 @@ IMPORTANT: 이제 Trident에서 Kubernetes 1.27이 지원됩니다. Kubernetes�
 
 
 
+[[changes-in-22-10]]
 == 22.10의 변경 사항
 
 * Astra Trident 22.10으로 업그레이드하기 전에 다음 중요 정보를 읽어야 합니다. *
@@ -145,6 +156,7 @@ IMPORTANT: 이제 Trident에서 Kubernetes 1.27이 지원됩니다. Kubernetes�
 ====
 
 
+[[fixes]]
 === 수정
 
 * 을 사용하여 생성된 ONTAP 백엔드에 대한 특정 문제를 해결했습니다 `credentials` 22.07.0 업그레이드 중 온라인 상태로 전환되지 않는 필드(link:https://github.com/NetApp/trident/issues/759["문제 #759"^])를 클릭합니다.
@@ -157,6 +169,7 @@ IMPORTANT: 이제 Trident에서 Kubernetes 1.27이 지원됩니다. Kubernetes�
 
 
 
+[[enhancements]]
 === 향상된 기능
 
 * 쿠버네티스:
@@ -176,6 +189,7 @@ IMPORTANT: 이제 Trident에서 Kubernetes 1.27이 지원됩니다. Kubernetes�
 
 
 
+[[deprecations]]
 === 사용 중단
 
 * ** Kubernetes:** 최소 지원 Kubernetes를 1.20으로 업데이트했습니다.
@@ -185,10 +199,12 @@ IMPORTANT: 이제 Trident에서 Kubernetes 1.27이 지원됩니다. Kubernetes�
 
 
 
+[[changes-in-22-07]]
 == 22.07 변경
 
 
 
+[[fixes]]
 === 수정
 
 ** Kubernetes**
@@ -199,6 +215,7 @@ IMPORTANT: 이제 Trident에서 Kubernetes 1.27이 지원됩니다. Kubernetes�
 
 
 
+[[enhancements]]
 === 향상된 기능
 
 * k8s.gcr.io에서 registry.k8s.io로 CSI 이미지의 기본 레지스트리로 전환합니다
@@ -210,6 +227,7 @@ IMPORTANT: 이제 Trident에서 Kubernetes 1.27이 지원됩니다. Kubernetes�
 
 
 
+[[deprecations]]
 === 사용 중단
 
 * ** Kubernetes:** 최소 지원 Kubernetes를 1.19로 업데이트했습니다.
@@ -218,6 +236,7 @@ IMPORTANT: 이제 Trident에서 Kubernetes 1.27이 지원됩니다. Kubernetes�
 
 
 
+[[removals]]
 === 제거
 
 * AWS CVS 드라이버(22.04 이후 더 이상 사용되지 않음)가 제거되었습니다.
@@ -232,12 +251,14 @@ IMPORTANT: 이제 Trident에서 Kubernetes 1.27이 지원됩니다. Kubernetes�
 
 
 
+[[documentation]]
 === 문서화
 
 새로운 소식 link:https://docs.netapp.com/us-en/trident/trident-reference/pod-security.html["POD 보안 표준"] (PSS) 섹션에 설치 시 Astra Trident에서 활성화한 상세 권한이 추가되었습니다.
 
 
 
+[[changes-in-22-04]]
 == 22.04의 변경
 
 NetApp은 제품과 서비스를 지속적으로 개선하고 향상시키고 있습니다. 다음은 Astra Trident의 최신 기능 중 일부입니다. 이전 릴리스에 대한 정보는 이전 버전의 설명서를 참조하십시오.
@@ -247,6 +268,7 @@ IMPORTANT: 이전 Trident 릴리즈에서 업그레이드하고 Azure NetApp Fil
 
 
 
+[[fixes]]
 === 수정
 
 * iSCSI 이니시에이터 이름의 구문 분석 기능이 향상되었습니다. (link:https://github.com/NetApp/trident/issues/681["GitHub 문제 #681"^])
@@ -261,6 +283,7 @@ IMPORTANT: 이전 Trident 릴리즈에서 업그레이드하고 Azure NetApp Fil
 
 
 
+[[enhancements]]
 === 향상된 기능
 
 * 이제 Trident의 보안 끝점에 대한 인바운드 연결에는 TLS 1.3 이상이 필요합니다. (link:https://github.com/NetApp/trident/issues/698["GitHub 문제 #698"^])
@@ -271,16 +294,19 @@ IMPORTANT: 이전 Trident 릴리즈에서 업그레이드하고 Azure NetApp Fil
 
 
 
+[[removals]]
 === 제거
 
 E-Series 드라이버(20.07 이후 비활성화됨)가 제거되었습니다.
 
 
 
+[[changes-in-22-01-1]]
 == 22.01.1의 변경 사항
 
 
 
+[[fixes]]
 === 수정
 
 * 삭제된 노드에서 볼륨 게시를 취소하는 문제 해결 (link:https://github.com/NetApp/trident/issues/691["GitHub 문제 #691"])
@@ -289,10 +315,12 @@ E-Series 드라이버(20.07 이후 비활성화됨)가 제거되었습니다.
 
 
 
+[[changes-in-22-01-0]]
 == 22.01.0의 변경 사항
 
 
 
+[[fixes]]
 === 수정
 
 * * Kubernetes: * 대규모 클러스터의 노드 등록 백오프 재시도 시간을 늘립니다.
@@ -307,6 +335,7 @@ E-Series 드라이버(20.07 이후 비활성화됨)가 제거되었습니다.
 
 
 
+[[enhancements]]
 === 향상된 기능
 
 * Kubernetes의 향상된 기능:
@@ -321,12 +350,14 @@ E-Series 드라이버(20.07 이후 비활성화됨)가 제거되었습니다.
 
 
 
+[[deprecations]]
 === 사용 중단
 
 Trident REST 인터페이스는 127.0.0.1 또는 [::1] 주소에서만 수신 및 제공할 수 있습니다
 
 
 
+[[changes-in-21-10-1]]
 == 21.10.1 변경
 
 
@@ -334,6 +365,7 @@ WARNING: v21.10.0 릴리즈에는 노드를 제거한 다음 Kubernetes 클러�
 
 
 
+[[fixes]]
 === 수정
 
 * GCP CVS 백엔드에서 볼륨을 가져올 때 잠재적인 경쟁 조건이 수정되어 가져오지 못했습니다.
@@ -343,10 +375,12 @@ WARNING: v21.10.0 릴리즈에는 노드를 제거한 다음 Kubernetes 클러�
 
 
 
+[[changes-in-21-10-0]]
 == 21.10.0 변경
 
 
 
+[[fixes]]
 === 수정
 
 * XFS 볼륨의 클론을 소스 볼륨과 동일한 노드에 마운트할 수 없는 문제(GitHub 문제 514)가 해결되었습니다.
@@ -367,6 +401,7 @@ WARNING: v21.10.0 릴리즈에는 노드를 제거한 다음 Kubernetes 클러�
 
 
 
+[[enhancements]]
 === 향상된 기능
 
 * 에 대한 지원이 추가되었습니다 `unixPermissions` GCP-CVS 성능 볼륨 옵션.
@@ -382,6 +417,7 @@ WARNING: v21.10.0 릴리즈에는 노드를 제거한 다음 Kubernetes 클러�
 
 
 
+[[experimental-enhancements]]
 === 실험적인 개선
 
 * 에서 볼륨 복제에 대한 지원이 추가되었습니다 `ontap-san` 드라이버.
@@ -390,6 +426,7 @@ WARNING: v21.10.0 릴리즈에는 노드를 제거한 다음 Kubernetes 클러�
 
 
 
+[[known-issues]]
 == 알려진 문제
 
 알려진 문제점은 제품을 성공적으로 사용하지 못하게 만들 수 있는 문제를 식별합니다.
@@ -413,6 +450,7 @@ NOTE: 지정할 수 없습니다 `dataLIF` ONTAP SAN 백엔드에서 Astra Tride
 
 
 
+[[find-more-information]]
 == 자세한 내용을 확인하십시오
 
 * https://github.com/NetApp/trident["Astra Trident GitHub를 참조하십시오"^]

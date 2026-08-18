@@ -16,6 +16,7 @@ Astra Trident 설치와 함께 Element 백엔드를 생성하고 사용하는 �
 
 
 
+[[before-you-begin]]
 == 시작하기 전에
 
 Element 백엔드를 생성하기 전에 다음이 필요합니다.
@@ -27,6 +28,7 @@ Element 백엔드를 생성하기 전에 다음이 필요합니다.
 
 
 
+[[volume-modes]]
 == 볼륨 모드
 
 를 클릭합니다 `solidfire-san` 스토리지 드라이버는 파일 및 블록의 볼륨 모드를 모두 지원합니다. 의 경우 `Filesystem` 볼륨 코드, Astra Trident가 볼륨을 생성하고 파일 시스템을 생성합니다. 파일 시스템 유형은 StorageClass에 의해 지정됩니다.
@@ -93,6 +95,7 @@ WARNING: 볼륨 액세스 그룹은 Astra Trident의 기존 비 CSI 프레임워
 
 
 
+[[backend-configuration-options]]
 == 백엔드 구성 옵션
 
 백엔드 구성 옵션은 다음 표를 참조하십시오.
@@ -145,6 +148,7 @@ WARNING: 사용하지 마십시오 `debugTraceFlags` 문제 해결 및 자세한
 
 
 
+[[example-1-backend-configuration-for-solidfire-san-driver-with-three-volume-types]]
 == 예 1: 에 대한 백엔드 구성 `solidfire-san` 세 가지 볼륨 유형을 가진 드라이버
 
 이 예에서는 CHAP 인증을 사용하는 백엔드 파일을 보여 주고 특정 QoS 보장을 포함하는 세 가지 볼륨 유형을 모델링합니다. 그런 다음 에서 각 스토리지 클래스를 사용할 스토리지 클래스를 정의할 가능성이 높습니다 `IOPS` 스토리지 클래스 매개 변수입니다.
@@ -181,6 +185,7 @@ Types:
 ----
 
 
+[[example-2-backend-and-storage-class-configuration-for-solidfire-san-driver-with-virtual-pools]]
 == 예 2: 에 대한 백엔드 및 스토리지 클래스 구성 `solidfire-san` 가상 풀이 있는 드라이버
 
 이 예에서는 가상 풀과 이를 다시 참조하는 StorageClasses와 함께 구성된 백엔드 정의 파일을 보여 줍니다.
@@ -294,6 +299,7 @@ parameters:
 ----
 
 
+[[find-more-information]]
 == 자세한 내용을 확인하십시오
 
 * link:../trident-concepts/vol-access-groups.html["볼륨 액세스 그룹"^]

@@ -22,6 +22,7 @@ TIP: 문제 해결 문서의 전체 목록을 보려면 을 참조하십시오 h
 
 
 
+[[general-troubleshooting]]
 == 일반 문제 해결
 
 * Trident 포드가 제대로 표시되지 않는 경우(예: Trident 포드가 에 걸린 경우 `ContainerCreating` 2개 미만의 준비된 컨테이너로 단계를 진행). 를 실행합니다 `kubectl -n trident describe deployment trident` 및 `kubectl -n trident describe pod trident-********-****` 더 많은 통찰력을 제공할 수 있습니다. kubelet 로그 얻기(예: VIA `journalctl -xeu kubelet`) 또한 도움이 될 수 있습니다.
@@ -63,7 +64,7 @@ tridentctl과 함께 설치됩니다::
 
 * 을 포함하여 각 백엔드에 대한 디버그 로그를 얻을 수도 있습니다 `debugTraceFlags` 백엔드 정의에서 예를 들어, 을 포함합니다 `debugTraceFlags: {“api”:true, “method”:true,}` Trident 로그에서 API 호출 및 메서드 트래버스된 정보를 얻습니다. 기존 백엔드에 가 있을 수 있습니다 `debugTraceFlags` 로 구성됩니다 `tridentctl backend update`.
 * RedHat CoreOS를 사용할 때는 다음을 확인하십시오 `iscsid` 는 작업자 노드에서 활성화되고 기본적으로 시작됩니다. 이 작업은 OpenShift MachineConfigs를 사용하거나 점화 템플릿을 수정하여 수행할 수 있습니다.
-* Trident를 https://azure.microsoft.com/en-us/products/netapp/["Azure NetApp Files"] 사용할 때 발생할 수 있는 일반적인 문제는 테넌트 및 클라이언트 암호가 권한이 부족한 앱 등록에서 제공되는 경우입니다. Trident 요구 사항의 전체 목록은 link:../trident-use/anf.html["Azure NetApp Files"] 구성을 참조하십시오.
+* Trident를 https://azure.microsoft.com/en-us/products/netapp/["Azure NetApp Files"^] 사용할 때 발생할 수 있는 일반적인 문제는 테넌트 및 클라이언트 암호가 권한이 부족한 앱 등록에서 제공되는 경우입니다. Trident 요구 사항의 전체 목록은 link:./trident-use/anf.html["Azure NetApp Files"] 구성을 참조하십시오.
 * 컨테이너에 PV를 장착하는 데 문제가 있는 경우, 반드시 확인하십시오 `rpcbind` 가 설치되어 실행 중입니다. 호스트 OS에 필요한 패키지 관리자를 사용하여 확인합니다 `rpcbind` 가 실행 중입니다. 의 상태를 확인할 수 있습니다 `rpcbind` 를 실행하여 서비스를 제공합니다 `systemctl status rpcbind` 또는 그와 동등한 제품이라는 것입니다.
 * Trident 백엔드가 에 포함되어 있다고 보고하는 경우 `failed` State: 이전에 작업을 수행했지만 백엔드와 연결된 SVM/관리 자격 증명을 변경했기 때문일 수 있습니다. 을 사용하여 백엔드 정보를 업데이트합니다 `tridentctl update backend` 또는 Trident Pod를 바운드하면 이 문제가 해결됩니다.
 * 베타 볼륨 스냅샷을 사용하도록 Kubernetes 클러스터 및/또는 Trident를 업그레이드할 경우 기존의 모든 알파 스냅샷 CRS가 완전히 제거되었는지 확인합니다. 그런 다음 를 사용할 수 있습니다 `tridentctl obliviate alpha-snapshot-crd` 알파 스냅샷 CRD를 삭제하는 명령입니다. 을 참조하십시오 https://netapp.io/2020/01/30/alpha-to-beta-snapshots/["블로그입니다"] 알파 스냅샷 마이그레이션 단계를 이해합니다.
@@ -80,6 +81,7 @@ NOTE: 이 후 Trident를 처음부터 다시 구성해야 합니다.
 
 
 
+[[troubleshooting-an-unsuccessful-trident-deployment-using-the-operator]]
 == 연산자를 사용하여 실패한 Trident 배포 문제 해결
 
 연산자를 사용하여 Trident를 배포하는 경우 의 상태입니다 `TridentOrchestrator` 변경 시작 `Installing` 를 선택합니다 `Installed`. 을(를) 관찰하면 `Failed` 상태, 운용자가 자체적으로 복구할 수 없는 경우, 다음 명령어를 실행해 운용자의 로그를 확인해야 한다.
@@ -155,6 +157,7 @@ Pod가 완전히 초기화될 수 없음을 확인할 수 있습니다
 
 
 
+[[troubleshooting-an-unsuccessful-trident-deployment-using-tridentctl]]
 == 를 사용하여 Trident 배포가 성공하지 못한 경우 문제 해결 `tridentctl`
 
 무엇이 잘못되었는지 알아내기 위해 를 사용하여 설치 프로그램을 다시 실행할 수 있습니다 ``-d`` 디버그 모드를 설정하고 문제가 무엇인지 이해하는 데 도움이 되는 인수:

@@ -16,6 +16,7 @@ Astra Trident를 다양한 환경과 조직에 설치할 수 있도록 NetApp은
 
 
 
+[[critical-information-about-astra-trident-23-04]]
 == Astra Trident 23.04에 대한 중요 정보
 
 * Astra Trident * 에 대한 다음 중요 정보를 읽어야 합니다
@@ -33,6 +34,7 @@ Astra Trident를 다양한 환경과 조직에 설치할 수 있도록 NetApp은
 ====
 
 
+[[before-you-begin]]
 == 시작하기 전에
 
 설치 경로에 관계없이 다음 항목이 있어야 합니다.
@@ -50,12 +52,14 @@ TIP: 에 익숙하지 않은 경우 link:../trident-concepts/intro.html["기본 
 
 
 
+[[choose-your-installation-method]]
 == 설치 방법을 선택합니다
 
-적합한 설치 방법을 선택합니다. 의 고려 사항도 검토해야 합니다 link:kubernetes-deploy.html#move-between-installation-methods["방법 간 이동"] 결정을 내리기 전에
+본인에게 맞는 설치 방법을 선택하세요. 결정하기 전에 link:kubernetes-deploy.html#moving-between-installation-methods["방법 간 이동"]에 대한 고려 사항도 검토해야 합니다.
 
 
 
+[[using-the-trident-operator]]
 === Trident 연산자 사용
 
 수동으로 배포하든 Hrom을 사용하건 Trident 운영자는 설치를 단순화하고 Astra Trident 리소스를 동적으로 관리할 수 있는 훌륭한 방법입니다. 물론 가능합니다 link:../trident-get-started/kubernetes-customize-deploy.html["Trident 운영자 배포를 사용자 지정합니다"] 의 속성을 사용합니다 `TridentOrchestrator` 사용자 지정 리소스(CR).
@@ -111,6 +115,7 @@ NetApp Console 사용하여 Astra Trident 사용하면 최신 버전의 Astra Tr
 ====
 
 
+[[using-tridentctl]]
 === 사용 `tridentctl`
 
 업그레이드해야 하는 기존 배포가 있거나 배포를 사용자 지정하려는 경우 고려해야 합니다 . Astra Trident를 구축하는 기존 방법입니다.
@@ -123,6 +128,7 @@ NOTE: 22.04 릴리즈부터는 Astra Trident가 설치될 때마다 AES 키가 �
 
 
 
+[[choose-your-installation-mode]]
 == 설치 모드를 선택합니다
 
 조직에서 요구하는 _installation mode_(Standard, Offline 또는 Remote)를 기반으로 배포 프로세스를 결정합니다.
@@ -162,6 +168,7 @@ NOTE: 레지스트리 구성에 관계없이 CSI 이미지는 하나의 레지�
 ====
 
 
+[[select-the-process-based-on-your-method-and-mode]]
 == 방법 및 모드에 따라 프로세스를 선택합니다
 
 결정을 내린 후 적절한 프로세스를 선택합니다.
@@ -191,6 +198,7 @@ link:kubernetes-deploy-tridentctl.html["표준 또는 오프라인 설치"]
 |===
 
 
+[[moving-between-installation-methods]]
 == 설치 방법 간 이동
 
 설치 방법을 변경할 수 있습니다. 이렇게 하기 전에 다음 사항을 고려하십시오.
@@ -202,6 +210,7 @@ link:kubernetes-deploy-tridentctl.html["표준 또는 오프라인 설치"]
 
 
 
+[[other-known-configuration-options]]
 == 기타 알려진 구성 옵션
 
 VMware Tanzu 포트폴리오 제품에 Astra Trident를 설치할 경우:

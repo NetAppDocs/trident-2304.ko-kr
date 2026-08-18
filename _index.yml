@@ -56,11 +56,11 @@ indexpage:
   - title: 블로그 및 커뮤니티
     links:
     - title: Astra 블로그
-      url: https://cloud.netapp.com/blog/topic/astra
+      url: https://www.netapp.com/blog/
     - title: Astra Trident 블로그
       url: https://netapp.io/persistent-storage-provisioner-for-kubernetes/
     - title: 쿠버네티스 허브
-      url: https://cloud.netapp.com/kubernetes-hub
+      url: https://www.netapp.com/console/
     - title: NetApp.IO를 참조하십시오
       url: https://netapp.io/
     - title: 불화

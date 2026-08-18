@@ -16,6 +16,7 @@ Astra Trident의 백엔드로 Azure NetApp Files(ANF)를 구성할 수 있습니
 
 
 
+[[considerations]]
 == 고려 사항
 
 * Azure NetApp Files 서비스는 100GB 미만의 볼륨을 지원하지 않습니다. Astra Trident는 더 작은 볼륨을 요청하는 경우 100GB 볼륨을 자동으로 생성합니다.

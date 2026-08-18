@@ -16,6 +16,7 @@ Astra Trident를 구축하기 전에 호스트에 필수 프로토콜 사전 요
 
 
 
+[[verify-the-requirements]]
 == 요구 사항을 확인합니다
 
 * 배포가 모든 를 충족하는지 확인합니다 link:../trident-get-started/requirements.html["요구 사항"].
